@@ -1,7 +1,21 @@
 # Kubernetes Cheat Sheet
 
-#### [docker ps](https://docs.docker.com/engine/reference/commandline/ps/)
+#### mac-os installation
 ```
-$ docker ps 
-$ docker ps -a
+$ brew install kubectl
+$ brew install minikube
+```
+
+#### minikube
+```
+$ minikube start
+$ minikube ip
+```
+
+#### minikube
+```
+$ kubectl cluster-info
+$ kubectl apply -f client-pod.yaml
+$ kubectl get pods / kubectl get services
+$ kubectl describe pod client-pod
 ```
